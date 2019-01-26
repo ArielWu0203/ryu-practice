@@ -1,5 +1,6 @@
 # ryu-practice
 ## hw2
+[link](https://wiki.kshuang.xyz/doku.php/ccis_lab:sdn:hw2)
 ### Request
 * 寫一個 Ryu App :
   controller 對每個 switch 初始設置兩條 flow entry
@@ -16,3 +17,5 @@ OFPST_FLOW reply (OF1.3) (xid=0x2):
  cookie=0x0, duration=45.382s, table=0, n_packets=2, n_bytes=140, priority=1,in_port=1 actions=output:2
  cookie=0x0, duration=45.381s, table=0, n_packets=1, n_bytes=70, priority=1,in_port=2 actions=output:1
 ```
+## hw3
+[link](https://wiki.kshuang.xyz/doku.php/ccis_lab:sdn:hw3)
