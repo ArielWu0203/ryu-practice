@@ -19,3 +19,8 @@ OFPST_FLOW reply (OF1.3) (xid=0x2):
 ```
 ## hw3
 [link](https://wiki.kshuang.xyz/doku.php/ccis_lab:sdn:hw3)
+### Request
+* controller 對每個 switch 初始設置一條 flow entry: 當收到的封包型態為 LLDP 時發給 controller
+* controller 讓 switch 每個使用中的 port 送出 LLDP 封包
+* 設計一個資料結構存取 LLDP 得到的 topo
+* 需要 packet in handler 取得 switch 收到 LLDP 封包中的資訊
