@@ -24,3 +24,19 @@ OFPST_FLOW reply (OF1.3) (xid=0x2):
 * controller 讓 switch 每個使用中的 port 送出 LLDP 封包
 * 設計一個資料結構存取 LLDP 得到的 topo
 * 需要 packet in handler 取得 switch 收到 LLDP 封包中的資訊
+### Result
+```
+$ sudo python hw3_ryuapp.py -n 6
+```
+```
+loading app hw3_ryuapp.py
+loading app ryu.controller.ofp_handler
+instantiating app ryu.controller.ofp_handler of OFPHandler
+instantiating app hw3_ryuapp.py of hw3_RyuApp
+{2: {1: ['1', '2']}}
+{2: {1: ['1', '2'], 2: ['3', '1']}}
+{2: {1: ['1', '2'], 2: ['3', '1']}, 6: {2: ['5', '2']}}
+{2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2']}, 6: {2: ['5', '2']}}
+{2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2'], 2: ['5', '1']}, 6: {2: ['5', '2']}}
+
+```
