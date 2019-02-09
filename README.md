@@ -39,4 +39,74 @@ instantiating app hw3_ryuapp.py of hw3_RyuApp
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2']}, 6: {2: ['5', '2']}}
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2'], 2: ['5', '1']}, 6: {2: ['5', '2']}}
 
+## hw4
+###Result
+```
+araielwu@araielwu-VirtualBox:~/ryu-folder$ ryu-manager hw4_ryuapp.py 
+loading app hw4_ryuapp.py
+loading app ryu.controller.ofp_handler
+creating context wsgi
+instantiating app hw4_ryuapp.py of hw4_RyuApp
+instantiating app ryu.controller.ofp_handler of OFPHandler
+(6945) wsgi starting up on http://0.0.0.0:8080
+{1: {2: ['2', '1']}}
+{1: {2: ['2', '1']}, 2: {2: ['3', '1']}}
+{1: {2: ['2', '1']}, 2: {2: ['3', '1']}, 3: {2: ['4', '1']}}
+{1: {2: ['2', '1']}, 2: {2: ['3', '1']}, 3: {2: ['4', '1']}, 4: {2: ['5', '1']}}
+{1: {2: ['2', '1']}, 2: {2: ['3', '1']}, 3: {2: ['4', '1']}, 4: {2: ['5', '1']}, 5: {2: ['6', '2']}}
+(6945) accepted ('127.0.0.1', 38916)
+127.0.0.1 - - [09/Feb/2019 15:56:22] "GET /lldp/1 HTTP/1.1" 200 155 0.001103
+(6945) accepted ('127.0.0.1', 38918)
+127.0.0.1 - - [09/Feb/2019 15:56:24] "GET /lldp/2 HTTP/1.1" 200 155 0.021078
+(6945) accepted ('127.0.0.1', 38920)
+127.0.0.1 - - [09/Feb/2019 15:56:28] "GET /lldp/3 HTTP/1.1" 200 155 0.000471
+(6945) accepted ('127.0.0.1', 38922)
+127.0.0.1 - - [09/Feb/2019 15:56:30] "GET /lldp/4 HTTP/1.1" 200 155 0.002926
+(6945) accepted ('127.0.0.1', 38924)
+127.0.0.1 - - [09/Feb/2019 15:56:32] "GET /lldp/5 HTTP/1.1" 200 155 0.000404
+(6945) accepted ('127.0.0.1', 38926)
+127.0.0.1 - - [09/Feb/2019 15:56:35] "GET /lldp/6 HTTP/1.1" 404 133 0.000439
+
+```
+
+```
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/1
+{
+    "2": [
+        "2", 
+        "1"
+    ]
+}
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/2
+{
+    "2": [
+        "3", 
+        "1"
+    ]
+}
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/3
+{
+    "2": [
+        "4", 
+        "1"
+    ]
+}
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/4
+{
+    "2": [
+        "5", 
+        "1"
+    ]
+}
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/5
+{
+    "2": [
+        "6", 
+        "2"
+    ]
+}
+araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/6
+Not found
+
+```
 ```
