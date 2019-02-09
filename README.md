@@ -40,6 +40,9 @@ instantiating app hw3_ryuapp.py of hw3_RyuApp
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2'], 2: ['5', '1']}, 6: {2: ['5', '2']}}
 ```
 ## hw4
+[link](https://wiki.kshuang.xyz/doku.php/ccis_lab:sdn:hw4)
+### Request
+* 使用 RESTful API 請求取得 hw3 
 ### Result
 ```
 araielwu@araielwu-VirtualBox:~/ryu-folder$ ryu-manager hw4_ryuapp.py 
