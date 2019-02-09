@@ -42,7 +42,7 @@ instantiating app hw3_ryuapp.py of hw3_RyuApp
 ## hw4
 [link](https://wiki.kshuang.xyz/doku.php/ccis_lab:sdn:hw4)
 ### Request
-* 使用 RESTful API 請求取得 hw3 
+* 使用 RESTful API 請求取得 hw3 lldp_struct
 ### Result
 ```
 araielwu@araielwu-VirtualBox:~/ryu-folder$ ryu-manager hw4_ryuapp.py 
