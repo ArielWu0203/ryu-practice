@@ -26,7 +26,7 @@ OFPST_FLOW reply (OF1.3) (xid=0x2):
 * 需要 packet in handler 取得 switch 收到 LLDP 封包中的資訊
 ### Result
 ```
-$ sudo python hw3_ryuapp.py -n 6
+$ sudo python hw3_net.py -n 6
 ```
 ```
 loading app hw3_ryuapp.py
@@ -40,7 +40,7 @@ instantiating app hw3_ryuapp.py of hw3_RyuApp
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2'], 2: ['5', '1']}, 6: {2: ['5', '2']}}
 ```
 ## hw4
-###Result
+### Result
 ```
 araielwu@araielwu-VirtualBox:~/ryu-folder$ ryu-manager hw4_ryuapp.py 
 loading app hw4_ryuapp.py
