@@ -28,7 +28,6 @@ OFPST_FLOW reply (OF1.3) (xid=0x2):
 ```
 $ sudo python hw3_ryuapp.py -n 6
 ```
-```
 loading app hw3_ryuapp.py
 loading app ryu.controller.ofp_handler
 instantiating app ryu.controller.ofp_handler of OFPHandler
@@ -38,7 +37,7 @@ instantiating app hw3_ryuapp.py of hw3_RyuApp
 {2: {1: ['1', '2'], 2: ['3', '1']}, 6: {2: ['5', '2']}}
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2']}, 6: {2: ['5', '2']}}
 {2: {1: ['1', '2'], 2: ['3', '1']}, 4: {1: ['3', '2'], 2: ['5', '1']}, 6: {2: ['5', '2']}}
-
+```
 ## hw4
 ###Result
 ```
