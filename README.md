@@ -109,4 +109,3 @@ araielwu@araielwu-VirtualBox:~$ curl http://0.0.0.0:8080/lldp/6
 Not found
 
 ```
-```
